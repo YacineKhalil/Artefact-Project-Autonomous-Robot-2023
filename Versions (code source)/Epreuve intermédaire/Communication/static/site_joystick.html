@@ -1,0 +1,45 @@
+<html>
+  
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+    
+    <body>
+      
+      <!--division de l affichage de la position (x,y)-->
+        <div id='affichage_position'>
+          <p>
+	    (x,y)=<span id='pos_souris'>(0,0)</span>
+	  </p>
+        </div>
+
+      <!--division de l'affichage de R rayon du joystick-->
+	<div id='affichage_R'>
+	  <p>
+	    R=<span id='R'></span>
+	  </p>
+	</div>
+
+  <!--division de l'affichage de l'interrupteur mode conduite-->
+  <div id='interrupteur'>
+    <r>
+Conduite automatique : <span id='mode_conduite'>false</span>
+    </r>
+</div>
+<div>
+    <label class="switch">
+<input id="switch" type="checkbox">
+<span class="slider round"></span>
+    </label>
+ </div>
+
+      <!--division de l affichage du joystick -->
+	<div id='joystick'>
+	  <img draggable="false" src="/static/image_joystick" />
+	</div>
+	
+  <script type="text/javascript" src="/static/javascript"></script>
+    </body>
+    
+</html>
